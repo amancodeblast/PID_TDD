@@ -9,16 +9,22 @@
  * @copyright Copyright (c) 2022
  *
  */
-#include "Controls.hpp"
+#include "controls.hpp"
+Controls::Controls(double Kp, double Kd, double Ki, double dt) {
+  Kp_ = Kp;
+  Kd_ = Kd;
+  Ki_ = Ki;
+  dt_ = dt;
+}
 /**
  * @brief get inputs
  *
  * @param dt_
  * @return int
  */
-int Controls::get_input(double dt_) {
-  dt = dt_;
-  return dt;
+double Controls::getTime() {
+  dt_ = -1;
+  return dt_;
 }
 /**
  * @brief Computes the final velocity
@@ -27,8 +33,7 @@ int Controls::get_input(double dt_) {
  * @param ActualVelocity
  * @return double
  */
-double Controls::compute_vel(double TargetSetpoint, double ActualVelocity) {
+double Controls::computeVel(double TargetSetpoint, double ActualVelocity) {
   double NewVelocity = 5;
   return NewVelocity;
 }
-
