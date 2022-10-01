@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.2.1)
-project (scratch)
+project (LIBDEMO)
 
 # Add project cmake modules to path.
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
@@ -9,7 +9,7 @@ option(COVERAGE "Generate Coverage Data" OFF)
 
 if (COVERAGE)
     include(CodeCoverage)
-    set(LCOV_REMOVE_EXTRA "'vendor/*'")
+    set(LCOV_REMOVE_EXTRA "'*vendor/*'")
     setup_target_for_coverage(code_coverage test/cpp-test coverage)
     set(COVERAGE_SRCS app/main.cpp include/lib.hpp)
 
@@ -26,4 +26,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_subdirectory(app)
 add_subdirectory(test)
+add_subdirectory(src)
 add_subdirectory(vendor/googletest/googletest)
