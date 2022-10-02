@@ -11,11 +11,6 @@ Part 1
 **Driver**: Aman Kumar Sharma
 
 
-Simple starter C++ project with:
-
-- cmake
-- googletest
-
 ## Standard install via command-line
 ```
 git clone --recursive https://github.com/amancodeblast/cpp-boilerplate.git
