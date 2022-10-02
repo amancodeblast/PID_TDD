@@ -1,6 +1,6 @@
 # C++ Boilerplate
 [![Build Status](https://app.travis-ci.com/amancodeblast/cpp-boilerplate.svg?branch=master)](https://app.travis-ci.com/amancodeblast/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/amancodeblast/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/amancodeblast/cpp-boilerplate?branch=master)
 ---
 
 ## Overview
