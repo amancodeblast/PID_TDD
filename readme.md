@@ -1,7 +1,8 @@
 PID based on Test Driven Development
 
-[![Build Status](https://app.travis-ci.com/amancodeblast/cpp-boilerplate.svg?branch=master)](https://app.travis-ci.com/amancodeblast/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/amancodeblast/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/amancodeblast/cpp-boilerplate?branch=master)
+[![Build Status](https://app.travis-ci.com/tanujthakkar/PID_TDD.svg?branch=master)](https://app.travis-ci.com/tanujthakkar/PID_TDD)
+[![Coverage Status](https://coveralls.io/repos/github/tanujthakkar/PID_TDD/badge.svg?branch=master)](https://coveralls.io/github/tanujthakkar/PID_TDD?branch=master)
+
 ---
 
 ## Overview
