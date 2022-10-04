@@ -1,4 +1,5 @@
-# C++ Boilerplate
+PID based on Test Driven Development
+
 [![Build Status](https://app.travis-ci.com/amancodeblast/cpp-boilerplate.svg?branch=master)](https://app.travis-ci.com/amancodeblast/cpp-boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/amancodeblast/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/amancodeblast/cpp-boilerplate?branch=master)
 ---
@@ -9,6 +10,9 @@ Week 5 ENPM808X Test Driven Development
 Part 1 
 **Navigator**: Sharmitha Ganesan
 **Driver**: Aman Kumar Sharma
+
+Part 2
+**Programmer**: Tanuj Thakkar (tanuj@umd.edu)
 
 
 ## Standard install via command-line
