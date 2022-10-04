@@ -9,8 +9,9 @@
  *
  */
 #include <gtest/gtest.h>
+#include <controls.hpp>
 
-#include "controls.hpp"
+
 Controls A(1.0, 0.1, 0.3, 1.0);
 
 /**
