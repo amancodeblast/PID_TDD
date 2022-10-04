@@ -11,7 +11,7 @@
 #include <gtest/gtest.h>
 
 #include "controls.hpp"
-Controls A(0.3, 0.3, 0.3, 0.3);
+Controls A(1.0, 0.1, 0.3, 1.0);
 
 /**
  * @brief Checking if the target velocity is closer to the computed velocity
