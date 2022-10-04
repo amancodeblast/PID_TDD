@@ -11,8 +11,8 @@
  *
  */
 
+#include <cmath>
 #include "controls.hpp"
-
 
 Controls::Controls(double Kp, double Kd, double Ki, double dt) {
   Kp_ = Kp;
@@ -26,18 +26,31 @@ Controls::Controls(double Kp, double Kd, double Ki, double dt) {
  *
  * @return int
  */
-double Controls::getTime() {
-  return dt_;
-}
+double Controls::getTime() { return dt_; }
 
 /**
  * @brief Computes the final velocity
  *
- * @param TargetSetpoint
- * @param ActualVelocity
+ * @param targetSetpoint
+ * @param actualVelocity
  * @return double
  */
-double Controls::computeVel(double TargetSetpoint, double ActualVelocity) {
-  double NewVelocity = 5;
-  return NewVelocity;
+double Controls::computeVel(double targetSetpoint, double actualVelocity) {
+  double prevError = 0;
+  double totalError = 0;
+  double tolerance = 0.1;
+
+  double pid;
+  double newVelocity = actualVelocity;
+  double currentError = targetSetpoint - newVelocity;
+  while (tolerance < std::abs(currentError)) {
+    totalError += currentError * dt_;
+    pid = (Kp_ * currentError) + (Ki_ * totalError) +
+          (Kd_ * (currentError - prevError) / dt_);
+    prevError = currentError;
+    newVelocity = newVelocity + pid;
+    currentError = targetSetpoint - newVelocity;
+  }
+
+  return newVelocity;
 }
