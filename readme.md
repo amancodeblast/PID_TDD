@@ -37,3 +37,9 @@ make code_coverage
 ```
 This generates a index.html page in the build/coverage sub-directory that can be viewed locally in a web browser.
 
+### TO DO (Future Work)
+<ul>
+  <li>Add limits to the PID output inorder to avoid overflow
+  <li>Have additional function to calculate instantaneous velocity
+  <li>Add tolerance parameter to the controller
+</ul>
