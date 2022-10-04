@@ -12,7 +12,7 @@
  */
 
 #include <cmath>
-#include "controls.hpp"
+#include <controls.hpp>
 
 Controls::Controls(double Kp, double Kd, double Ki, double dt) {
   Kp_ = Kp;
@@ -40,10 +40,10 @@ double Controls::computeVel(double targetSetpoint, double actualVelocity) {
   double totalError = 0;
   double tolerance = 0.1;
 
-  double pid;
   double newVelocity = actualVelocity;
   double currentError = targetSetpoint - newVelocity;
   while (tolerance < std::abs(currentError)) {
+    double pid;
     totalError += currentError * dt_;
     pid = (Kp_ * currentError) + (Ki_ * totalError) +
           (Kd_ * (currentError - prevError) / dt_);

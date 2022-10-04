@@ -12,7 +12,7 @@
  */
 
 #include <iostream>
-#include "controls.hpp"
+#include <controls.hpp>
 
 int main() {
   double Kp, Ki, Kd, dt;
